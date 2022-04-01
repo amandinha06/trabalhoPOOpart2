@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <title>HOME | Diniz converter</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/STYLE.CSS">
+</head>
+<body>
+    
+    <header class ="header">
+        <img src="assets/Diniz converter -logos_transparent.png" alt="" srcset="">
+    </header>
+
+    <main class = "container">
+        <article class = "card">
+            <header class = "card__header">
+                <p>BRL para Dólar</p>
+                <img src="assets/dollar-png-free-download-png-arts-711626.png" alt="">
+            </header>
+            <form class = "card__form">
+                <input type = "text" id="realDolar" placeholder = "Informe o valor em real!"> 
+                <button type = "button" onclick="conversao.converterRealDolar()">Converter</button>
+            </form>
+
+            <section class="content" id="resultadoRealDolar"></section>
+        </article>
+    
+        <article class = "card">
+            <header class = "card__header">
+                <p>BRL para Euro</p>
+                <img src="assets/png-transparent-euro-sign-euro-sign-text-number-currency-symbol-thumbnail-removebg-preview.png" alt="">
+            </header>
+            <form class = "card__form">
+                <input type = "text" id="realEuro" placeholder = "Informe o valor em real!"> 
+                <button type = "button" onclick="conversao.converterRealEuro()">Converter</button>
+            </form>
+
+            <section class="content" id="resultadoRealEuro"></section>
+        </article>
+
+        <article class = "card">
+            <header class = "card__header">
+                <p>BRL para Libra</p>
+                <img src="assets/libra2-removebg-preview.png" alt="">
+            </header>
+            <form class = "card__form">
+                <input type = "text" id="realLibra" placeholder = "Informe o valor em real!"> 
+                <button type = "button" onclick="conversao.converterRealLibra()">Converter</button>
+            </form>
+
+            <section class="content" id="resultadoRealLibra"></section>
+        </article>
+
+        <article class = "card">
+            <header class = "card__header">
+                <p>Dólar para BRL</p>
+                <img src="assets/dollar-png-free-download-png-arts-711626.png" alt="">
+            </header>
+            <form class = "card__form">
+                <input type = "text" id="dolarReal" placeholder = "Informe o valor em dólar!"> 
+                <button type = "button" onclick="conversao.converterDolarReal()">Converter</button>
+            </form>
+
+            <section class="content" id="resultadoDolarReal"></section>
+        </article>
+
+        <article class = "card">
+            <header class = "card__header">
+                <p>Euro para BRL</p>
+                <img src="assets/png-transparent-euro-sign-euro-sign-text-number-currency-symbol-thumbnail-removebg-preview.png" alt="">
+            </header>
+            <form class = "card__form">
+                <input type = "text" id="euroReal" placeholder = "Informe o valor em euro!"> 
+                <button type = "button" onclick="conversao.converterEuroReal()">Converter</button>
+            </form>
+
+            <section class="content" id="resultadoEuroReal"></section>
+        </article>
+
+        <article class = "card">
+            <header class = "card__header">
+                <p>Libra para BRL</p>
+                <img src="assets/libra2-removebg-preview.png" alt="">
+            </header>
+            <form class = "card__form">
+                <input type = "text" id="libraReal" placeholder = "Informe o valor em Libra!"> 
+                <button type = "button" onclick="conversao.converterLibraReal()">Converter</button>
+            </form>
+
+            <section class="content" id="resultadoLibraReal"></section>
+        </article>
+
+    </main>
+
+    <script src = "js/script.js"></script>
+</body>
+</html>
